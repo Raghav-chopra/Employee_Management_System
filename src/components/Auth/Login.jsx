@@ -9,8 +9,6 @@ const Login = ({handleLogin}) => {
   const submitHandler = (e) => {
     e.preventDefault(); // Prevents form from refreshing the page
     handleLogin(email,password)
-    console.log("Email is", email);
-    console.log("Password is", password);
   };
 
   return (

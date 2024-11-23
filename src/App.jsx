@@ -38,6 +38,7 @@ const App = () => {
     }
     else if(userdata){
       const employee=userdata.find((e)=>e.email==email && e.password==password);
+      console.log(employee)
       if(employee){
       setUser('employee')
       setloggedInuserdata(employee);
